@@ -12,6 +12,6 @@ class categorie_unite extends Model
 
     public function unites()
     {
-        return $this->hasMany(Unite::class,'categorie_id');
+        return $this->hasMany(unite::class,'categorie_id');
     }
 }
