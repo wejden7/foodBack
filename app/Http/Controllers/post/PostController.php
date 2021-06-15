@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Validator;
-use App\Models\Post;
+use App\Models\post;
 use App\Models\User;
 use App\Models\jaime;
 use App\Models\categorie_post;
@@ -19,7 +19,7 @@ class PostController extends Controller
     
     public function getAll(Request $request){
         $user =  $request->user();
-        $posts =  Post::all();
+        $posts =  post::all();
         foreach ($posts as $post) {
 
             $jaime = jaime::where('post_id',$post->id);
