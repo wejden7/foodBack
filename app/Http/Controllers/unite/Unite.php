@@ -29,7 +29,7 @@ class Unite extends Controller
 
         $categorie_Ingredion_Id = $data['categorie_id'];
 
-        $categorie_Ingredion = categorie_ingredion::find($categorie_Ingredion_Id);
+        $categorie_Ingredion = categorie_unite::find($categorie_Ingredion_Id);
         
         if($categorie_Ingredion != null){
 
@@ -41,7 +41,7 @@ class Unite extends Controller
 
         }else{
 
-        return response()->json(['categorie_Ingredion'=>' NoteFound'], 501); 
+        return response()->json(['categorie_unite'=>' NoteFound'], 501); 
 
         }
        
