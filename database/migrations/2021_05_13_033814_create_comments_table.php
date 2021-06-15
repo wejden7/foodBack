@@ -16,7 +16,7 @@ class CreateCommentsTable extends Migration
         Schema::create('comments', function (Blueprint $table) {
             $table->id();
             $table->string('comment');
-            $table->bigInteger("id_repondre")->>nullable()();
+            $table->bigInteger("id_repondre")->nullable()();
             $table->enum('type', array('comment', 'repondre',));
             $table->timestamps();
 
