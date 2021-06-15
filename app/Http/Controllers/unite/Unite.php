@@ -35,7 +35,7 @@ class Unite extends Controller
 
         // ! $res = UniteModel::Where('categorie_id',$categorie_Ingredion->categorie_unite_id)->get();
 
-        $res = categorie_unite::find($categorie_Ingredion->categorie_unite_id)->unites;
+        $res = categorie_unite::find($categorie_Ingredion_Id)->unites;
 
         return response()->json($res, 200); 
 
